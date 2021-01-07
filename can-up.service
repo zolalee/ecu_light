@@ -1,0 +1,10 @@
+[Unit]
+Description=Can Up Service
+After=network.target
+
+[Service]
+User=root
+ExecStart=/etc/init.d/can-up.sh
+
+[Install]
+WantedBy=multi-user.target

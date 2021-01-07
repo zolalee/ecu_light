@@ -1,0 +1,10 @@
+[Unit]
+Description=Ginger Lite Service
+After=can-up.service
+
+[Service]
+User=root
+ExecStart=/etc/init.d/gingerlite-ecu.sh
+
+[Install]
+WantedBy=multi-user.target
